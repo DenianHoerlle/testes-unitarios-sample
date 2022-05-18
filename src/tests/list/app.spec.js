@@ -5,7 +5,7 @@ import {
   waitFor,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import List from "./components/List";
+import List from "../../components/List";
 
 describe("App Component", () => {
   it("should render list items", () => {

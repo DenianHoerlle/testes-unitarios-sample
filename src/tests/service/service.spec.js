@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import server from "./methods";
 import { render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import List from "../components/List";
+import List from "../../components/List";
 import { act } from "@testing-library/react";
 
 beforeAll(() =>
@@ -20,7 +20,7 @@ describe("test api calls", () => {
   it("should add a new user to the list", async () => {
     const { findByText } = render(<List />);
 
-    const addButton = await findByText("adicionar");
+    const addButton = await findByText("adicionar request");
 
     act(() => {
       userEvent.click(addButton);
