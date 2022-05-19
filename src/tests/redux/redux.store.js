@@ -14,18 +14,6 @@ const list = createSlice({
   },
 });
 
-// const userInfo = createSlice({
-//   name: "user",
-//   initialState: initialState,
-//   reducers: {
-//     setUser(state, action) {
-//       state.push({
-//         user: action.payload.user,
-//       });
-//     },
-//   },
-// });
-
 export const { setList } = list.actions;
 
 export default list.reducer;

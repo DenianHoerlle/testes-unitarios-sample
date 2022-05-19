@@ -18,6 +18,7 @@ afterAll(() => server.close());
 
 describe("test api calls", () => {
   it("should add a new user to the list", async () => {
+    // teste 'e2e'
     const { findByText } = render(<List />);
 
     const addButton = await findByText("adicionar request");
